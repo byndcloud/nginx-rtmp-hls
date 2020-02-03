@@ -3,7 +3,7 @@ FROM buildpack-deps:stable
 LABEL maintainer="Igor Moura <hi@igor.mp>"
 
 # Versions of Nginx to use
-ENV NGINX_VERSION nginx-1.14.2
+ENV NGINX_VERSION nginx-1.16.1
 
 # Install dependencies
 RUN apt-get update && \
