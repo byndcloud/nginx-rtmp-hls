@@ -19,7 +19,7 @@ RUN mkdir -p /tmp/build/nginx && \
 # Download and decompress RTMP module
 RUN mkdir -p /tmp/build/nginx-rtmp-module && \
     cd /tmp/build/nginx-rtmp-module && \
-    git clone git://github.com/ut0mt8/nginx-rtmp-module.git && \
+    git clone git://github.com/arut/nginx-rtmp-module.git && \
     cd nginx-rtmp-module
 
 # Build and install Nginx
