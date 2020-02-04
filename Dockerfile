@@ -7,7 +7,7 @@ ENV NGINX_VERSION nginx-1.16.1
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y ca-certificates openssl libssl-dev ffmpeg && \
+    apt-get install -y ca-certificates openssl libssl-dev htop ffmpeg && \
     rm -rf /var/lib/apt/lists/*
 
 # Download and decompress Nginx
