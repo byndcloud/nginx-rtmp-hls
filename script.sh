@@ -1,8 +1,8 @@
 #! /bin/bash
 /usr/bin/ffmpeg -fflags +igndts -i rtmp://localhost/mytv/$1 \
-                -c:v libx264 -c:a aac -preset ultrafast -tune zerolatency -async 1 -s 1280x720 -b:v 1000K -bufsize 1000k -f flv \
+                -c:v libx264 -c:a aac -preset ultrafast -tune zerolatency -async 1 -s 1280x720 -b:v 1500K -bufsize 1500k -f flv \
                 -max_muxing_queue_size 1024 rtmp://localhost/hls/$1_hi \
-                -c:v libx264 -c:a aac -preset ultrafast -tune zerolatency -async 1 -s 640x360 -b:v 500K -bufsize 500k -f flv \
+                -c:v libx264 -c:a aac -preset ultrafast -tune zerolatency -async 1 -s 640x360 -b:v 700K -bufsize 700k -f flv \
                 -max_muxing_queue_size 1024 rtmp://localhost/hls/$1_med \
                 -c:v libx264 -c:a aac -preset ultrafast -tune zerolatency -async 1 -s 320x180 -b:v 250K -bufsize 250k -f flv \
                 -max_muxing_queue_size 1024 rtmp://localhost/hls/$1_low \
