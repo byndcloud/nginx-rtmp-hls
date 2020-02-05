@@ -66,6 +66,10 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY script.sh /script.sh
 
+# Set up SSL files
+COPY fullchain.pem /etc/ssl/certs/fullchain.pem
+COPY privkey.pem /etc/ssl/private/privkey.pem
+
 EXPOSE 1935
 EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
