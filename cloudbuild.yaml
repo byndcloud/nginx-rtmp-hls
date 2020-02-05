@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/krotonapp/nginx-rtmp'
+  args: [ 'build', '-t', 'gcr.io/krotonapp/nginx-rtmp', '.' ]
+images:
+- 'gcr.io/krotonapp/nginx-rtmp'
+tags: ['latest']
