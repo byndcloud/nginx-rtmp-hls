@@ -9,12 +9,16 @@ spec:
   selector:
     run: my-app
   ports:
-  - protocol: TCP
-    name: httpport
-    port: 80
-    targetPort: 8080
-  - protocol: TCP
-    name: rtmpport
-    port: 1935
-    targetPort: 1935
+    - protocol: TCP
+      name: httpport
+      port: 80
+      targetPort: 8080
+    - protocol: TCP
+      name: httpsport
+      port: 443
+      targetPort: 443
+    - protocol: TCP
+      name: rtmpport
+      port: 1935
+      targetPort: 1935
   loadBalancerIP: "34.67.175.113"
