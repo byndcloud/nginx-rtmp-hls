@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: streaming-processor
-        image: gcr.io/krotonapp/nginx-rtmp:latest
+        image: gcr.io/beyond-meet/nginx-rtmp:latest
