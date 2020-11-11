@@ -70,6 +70,8 @@ COPY script.sh /script.sh
 COPY fullchain.pem /etc/ssl/certs/fullchain.pem
 COPY privkey.pem /etc/ssl/private/privkey.pem
 
+RUN mkdir -p /tmp/rec
+
 EXPOSE 1935
 EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
