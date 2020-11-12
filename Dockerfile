@@ -70,7 +70,7 @@ COPY script.sh /script.sh
 COPY fullchain.pem /etc/ssl/certs/fullchain.pem
 COPY privkey.pem /etc/ssl/private/privkey.pem
 
-RUN mkdir -p /tmp/rec
+RUN mkdir -p /home/recordings
 
 EXPOSE 1935
 EXPOSE 8080
